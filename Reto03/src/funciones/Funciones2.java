@@ -4,13 +4,6 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
 public class Funciones2 {
-	public static void main(String[] args) {
-		LocalDate ld = LocalDate.of(2023, 01, 23);
-		LocalDate ld2 = LocalDate.of(2024, 12, 23);
-		System.out.println(ChronoUnit.MONTHS.between(ld, ld2));
-		mediaDias(ld, ld2);
-
-	}
 
 	public static void mediaDias(LocalDate fecha1, LocalDate fecha2) {
 		LocalDate ld = fecha1;
