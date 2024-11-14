@@ -2,6 +2,7 @@ import java.time.LocalDate;
 import java.time.chrono.ChronoLocalDate;
 import java.util.Scanner;
 
+import funciones.Funciones2;
 import util.Funciones;
 
 public class Main {
@@ -13,12 +14,12 @@ public class Main {
 		do{
 			fecha1= Funciones.dimeFecha("Introduce una fecha (dia/mes/año):", sc);
 		    fecha2= Funciones.dimeFecha("Introduce una fecha (dia/mes/año):", sc);
-		}while(!(fecha2.isBefore(fecha1)));
+		}while(!(fecha2.isAfter(fecha1)));
+		if(fecha1.getYear()!=fecha2.getYear()) {
+			Funciones2.mediaDias(fecha1, fecha2);
+		}
 			
 				
-		if (fecha1.isEqual(fecha2) && ( || )) {
-			
-		}
 		
 
 	}
